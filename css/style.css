@@ -242,17 +242,27 @@ body {
 }
 
 .nav-logo {
-  font-family: var(--font-mono);
-  font-size: 1.3rem;
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
   text-decoration: none;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-logo:hover { color: var(--accent); }
-
-.logo-bracket { color: var(--accent); }
+.nav-logo:hover .logo-subtitle { color: var(--accent); }
 
 .nav-links {
   display: flex;
